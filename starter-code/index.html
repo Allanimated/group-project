@@ -10,50 +10,113 @@
 
   <style>
     body {
-      background-image: ;
-    }
-    nav {
-      display: block;
-      text-align: right;
+      background-image: url("assets/home/background-home-desktop.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
     }
 
-    section {
+    header {
+      display: flex;
+      margin-top: 35px;
+      align-items: center;
+    }
+    nav.navbar {
+      background-color:paleturquoise;
+      width: 600px;
+      padding: 20px;
+      padding-left: 100px;
+      margin: auto;
+      margin-right: 0%;
+      margin-top: 10px;
+      opacity: 0.1;
+    }
+
+    p {
       display: block;
-      width: 200px;
-      margin-left: 50px;
+      color: white;
+      font-size: 20px;
+      width: 500px;
+    }
+
+    p.line1 {
+      color: white;
+      font-size: 20px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    nav.navbar a {
+      color: white;
+      font-family: Helvetica;
+      font-size: 18px;
+      text-decoration: none;
+      padding-right: 15px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    section.content {
+      display: block;
+      width: 300px;
+      height: min-content;
       text-align: left;
-    
+      padding-bottom: 100px;
     }
 
     h1 {
-      font-size: 50px;
+      font-size: 80px;
+      color: white;
     }
-    #Explore {
-      text-align: right;
+    
+    section.circle {
+      background-color: white;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin-left: 48%;
+      margin-top: 150px;
     }
+
+    p#Explore {
+      color: black;
+      text-align: center;
+      font-size: 25px;
+    }
+
+    div {
+      display: flex;
+      margin-top: 200px;
+      margin-left: 50px;
+    }
+  
   </style>
 </head>
 <body>
-  <nav>
-    <a href="">00 Home</a>
-    <a href="">01 Destination</a>
-    <a href="">02 Crew</a>
-    <a href="">03 Technology</a>
-  </nav>
-  <section>
-    <p>So, you want to travel to</p>
+  <header>
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+    <nav class="navbar">
+      <a href="">00 Home</a>
+      <a href="">01 Destination</a>
+      <a href="">02 Crew</a>
+      <a href="">03 Technology</a>
+    </nav>
+  </header>
   
-    <h1>SPACE</h1>
-
-    <p>
-      Let’s face it; if you want to go to space, you might as well genuinely go to 
-      outer space and not hover kind of on the edge of it. Well sit back, and relax 
-      because we’ll give you a truly out of this world experience!
-    </p>
-  </section>
-  
-  
-  <p id="Explore">Explore</p> 
-
+  <div>
+    <section class="content">
+      <p class="line1">SO, YOU WANT TO TRAVEL TO</p>
+      <h1>SPACE</h1>
+      <p>
+        Let’s face it; if you want to go to space, you might as well genuinely go to 
+        outer space and not hover kind of on the edge of it. Well sit back, and relax 
+        because we’ll give you a truly out of this world experience!
+      </p>
+    </section>
+    <section class="circle">
+      <p id="Explore">EXPLORE</p>
+    </section>
+  </div>
 </body>
 </html>
